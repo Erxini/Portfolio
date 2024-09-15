@@ -1,0 +1,73 @@
+/* main */
+
+.main-content {
+    width: 70%;
+    padding: 50px;
+    text-align: left;
+}
+
+.about h1 {
+    font-size: 36px;
+    color: #b2ff00;
+    margin-bottom: 20px;
+    border: 1px solid green;
+
+}
+
+.about ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 250px;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cv-button {
+    background-color:  #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+.cv-button:hover {
+    background-color: #91cc00;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.stat {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 18%;
+    margin: 0px 7px;
+
+}
+
+.stat h2 {
+    font-size: 28px;
+    color: #b2ff00;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-variant: small-caps;
+}
+.about-item{
+        color: #b2ff00;
+
+}

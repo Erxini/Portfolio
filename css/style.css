@@ -5,13 +5,14 @@ body {
     background-color: #121212;
     color: white;
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* Container */
 .container {
     display: flex;
     width: 100%;
+    
 }
 
 /* Aside */
@@ -23,7 +24,7 @@ body {
     align-items: center;
     padding-top: 20px;
     text-align: center;
-    text-transform: capitalize;
+    font-style: initial;
 }
 
 .profile-img {
@@ -35,12 +36,10 @@ body {
 
 .name {
     font-size: 1.5em;
-    color: #b0ff00;
     margin: 0;
 }
 
-.role {
-    color: #b0ff00;
+.profesion {
     font-size: 0.9em;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -49,6 +48,8 @@ body {
 .menu {
     width: 100%;
     text-align: center;
+    font-variant: small-caps;
+
 }
 
 .menu-item {
@@ -60,6 +61,7 @@ body {
     font-size: 1em;
     margin: 10px 10px;
     border-radius: 5px;
+    font-variant: small-caps;
 }
 
 .menu-item:hover {
@@ -68,7 +70,7 @@ body {
 }
 
 /* Main */
-.main-content {
+.main-cont {
     flex: 1;
     padding: 50px;
 }
@@ -84,7 +86,7 @@ h3 {
     margin: 10px 0;
 }
 
-.highlight {
+.persona {
     color: #b0ff00;
 }
 
@@ -92,6 +94,7 @@ p {
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Button */
@@ -99,6 +102,7 @@ p {
     background-color: #333;
     color: white;
     padding: 10px 20px;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
     font-size: 1.2em;
