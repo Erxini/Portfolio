@@ -19,7 +19,7 @@
  
   }
   .article__box__header{
-    border-left: #b0ff00;
+    border-left: 2px solid #b0ff00;
     margin: 0px 0px  0px 28px;
     height: 250px;
  
@@ -27,7 +27,8 @@
   .fa-graduation-cap{
     background-color: #b0ff00;
     color: rgb(54, 49, 49);
-    /* padding: 15px; */
+    margin-left: 13px;
+    padding: 15px;
     font-size: 22px;
     border-radius: 50%;
     margin: 0;
