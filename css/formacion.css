@@ -1,0 +1,84 @@
+.main-cont-form {
+    width: 70%;
+    padding: 40px;
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.education h1 {
+    font-size: 36px;
+    color: #b2ff00;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los items de educación */
+.education-item {
+    /* display: flex;
+    position: relative; */
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border: 1px solid green;
+
+}
+
+.education-item::before {
+    content: "";
+    position: absolute;
+    left: 42px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #b2ff00;
+}
+
+.icon {
+    position: relative;
+    z-index: 1;
+    background-color: #b2ff00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.content {
+    background-color: #333;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.year {
+    font-size: 18px;
+    color: #fff;
+    background-color: #444;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.content h2 {
+    font-size: 22px;
+    color: #b2ff00;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #fff;
+}

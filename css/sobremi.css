@@ -2,7 +2,7 @@
 
 .main-content {
     width: 70%;
-    padding: 50px;
+    padding: 40px;
     text-align: left;
 }
 
@@ -10,8 +10,6 @@
     font-size: 36px;
     color: #b2ff00;
     margin-bottom: 20px;
-    border: 1px solid green;
-
 }
 
 .about ul {

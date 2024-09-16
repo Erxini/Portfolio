@@ -121,3 +121,13 @@ p {
     background-color: #b0ff00;
     color: black;
 }
+
+/* portfolio */
+.fotoport{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fotoport-item{
+    width: 400px;
+    margin: 20px 20px;
+}
