@@ -1,0 +1,222 @@
+.education-page {
+    background: #202522;
+    color: #f3f0e8;
+    min-height: 100vh;
+    padding: 30px 5vw 50px;
+}
+
+.education-page .portfolio-header {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.education-main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.education-heading {
+    align-items: end;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin: clamp(75px, 13vh, 145px) 0 clamp(55px, 8vw, 90px);
+}
+
+.education-kicker,
+.education-type,
+.education-state,
+.education-footer {
+    color: #8fb89b;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.education-kicker {
+    margin: 0 0 22px;
+}
+
+.education-heading h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(3rem, 7vw, 7rem);
+    font-weight: 500;
+    letter-spacing: -0.08em;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.education-heading h1 span {
+    color: #8fb89b;
+}
+
+.education-intro {
+    color: #aaa99e;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 5px;
+    max-width: 285px;
+}
+
+.education-list {
+    border-top: 1px solid rgba(243, 240, 232, 0.2);
+}
+
+.education-item {
+    align-items: center;
+    border-bottom: 1px solid rgba(243, 240, 232, 0.2);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 45px 48px minmax(0, 1fr) auto;
+    padding: 27px 0;
+    transition: background 250ms ease, padding 250ms ease;
+}
+
+.education-item:hover {
+    background: rgba(143, 184, 155, 0.06);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.education-item--main {
+    padding-bottom: 36px;
+    padding-top: 36px;
+}
+
+.education-number {
+    color: #65706a;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+}
+
+.education-icon {
+    align-items: center;
+    background: #8fb89b;
+    border-radius: 50%;
+    color: #202522;
+    display: flex;
+    font-size: 1rem;
+    height: 42px;
+    justify-content: center;
+    width: 42px;
+}
+
+.education-copy {
+    min-width: 0;
+}
+
+.education-type {
+    margin: 0 0 8px;
+}
+
+.education-copy h2 {
+    color: #f3f0e8;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.25rem, 2vw, 1.8rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin: 0 0 8px;
+}
+
+.education-copy p:last-child {
+    color: #aaa99e;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 650px;
+}
+
+.education-state {
+    color: #aaa99e;
+    white-space: nowrap;
+}
+
+.education-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.education-footer a {
+    color: #8fb89b;
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.education-footer a:hover {
+    color: #b4d5bd;
+}
+
+.education-footer a span {
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .education-page {
+        padding: 22px 22px 44px;
+    }
+
+    .education-page .portfolio-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .education-page .portfolio-nav {
+        gap: 14px;
+        order: 3;
+        width: 100%;
+    }
+
+    .education-page .portfolio-nav a {
+        font-size: 0.64rem;
+    }
+
+    .education-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        margin: 78px 0 48px;
+    }
+
+    .education-heading h1 {
+        font-size: clamp(3.2rem, 15vw, 5.5rem);
+    }
+
+    .education-item,
+    .education-item--main {
+        align-items: start;
+        gap: 14px;
+        grid-template-columns: 28px 38px minmax(0, 1fr);
+        padding: 24px 0;
+    }
+
+    .education-item:hover {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .education-icon {
+        font-size: 0.8rem;
+        height: 34px;
+        width: 34px;
+    }
+
+    .education-state {
+        grid-column: 3;
+        font-size: 0.6rem;
+        margin-top: -5px;
+    }
+
+    .education-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        line-height: 1.5;
+    }
+}

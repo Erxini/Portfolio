@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="shortcut icon" href="./../assets/images/Foto.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./../css/contacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="contact-page">
+        <header class="portfolio-header">
+            <a class="portfolio-mark" href="./../index.html" aria-label="Volver al inicio">SR<span>•</span></a>
+            <nav class="portfolio-nav" aria-label="Navegación principal">
+                <a href="./../index.html">Inicio</a>
+                <a href="./sobremi.html">Sobre mí</a>
+                <a href="./portfolio.html">Proyectos</a>
+                <a class="is-active" href="#contacto">Contacto</a>
+            </nav>
+            <span class="portfolio-status">03 / 03</span>
+        </header>
+
+        <main class="contact" id="contacto">
+            <section class="contact-intro">
+                <p class="contact-kicker">03 / Hablemos</p>
+                <h1>¿Tienes un proyecto<br><span>en mente?</span></h1>
+                <p class="contact-lead">Estoy buscando nuevas oportunidades para incorporarme a un equipo y participar en proyectos web útiles, cuidados y bien construidos.</p>
+
+                <ul class="contact-info">
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:seruedaglez@yahoo.es">seruedaglez@yahoo.es</a></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+34637882741">+34 637 882 741</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Toledo, España</span></li>
+                </ul>
+            </section>
+
+            <section class="contact-form-panel" aria-labelledby="form-title">
+                <p class="contact-kicker">Cuéntame los detalles</p>
+                <h2 id="form-title">Iniciar conversación</h2>
+                <form id="contact-form">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" placeholder="tu@correo.com" required>
+
+                    <label for="proyecto">Proyecto</label>
+                    <input id="proyecto" name="proyecto" type="text" placeholder="¿En qué estás trabajando?" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntame un poco más..." required></textarea>
+
+                    <button type="submit">Enviar mensaje <i class="fa fa-arrow-up-right-from-square" aria-hidden="true"></i></button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const contactForm = document.querySelector('#contact-form');
+        const formStatus = document.querySelector('.form-status');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            formStatus.textContent = 'Gracias. Tu mensaje está preparado para ser enviado.';
+            contactForm.reset();
+        });
+    </script>
+</body>
+
+</html>

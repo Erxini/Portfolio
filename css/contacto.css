@@ -1,0 +1,211 @@
+.contact-page {
+    background: #202522;
+    color: #f3f0e8;
+    min-height: 100vh;
+    padding: 30px 5vw 60px;
+}
+
+.contact-page .portfolio-header {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.contact-page main.contact {
+    align-items: start;
+    display: grid;
+    gap: clamp(55px, 9vw, 150px);
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.8fr);
+    margin: clamp(90px, 14vh, 160px) auto 0;
+    max-width: 1200px;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-kicker {
+    color: #8fb89b;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+}
+
+.contact-intro h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(3rem, 6.5vw, 6.6rem);
+    font-weight: 500;
+    letter-spacing: -0.08em;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.contact-intro h1 span {
+    color: #8fb89b;
+}
+
+.contact-lead {
+    color: #aaa99e;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 34px 0 0;
+    max-width: 430px;
+    text-align: left;
+}
+
+.contact-info {
+    display: grid;
+    gap: 17px;
+    list-style: none;
+    margin: 54px 0 0;
+    padding: 0;
+}
+
+.contact-info li {
+    align-items: center;
+    color: #aaa99e;
+    display: flex;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.76rem;
+    gap: 14px;
+}
+
+.contact-info i {
+    color: #8fb89b;
+    font-size: 0.9rem;
+    width: 18px;
+}
+
+.contact-info a {
+    color: #f3f0e8;
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.contact-info a:hover {
+    color: #8fb89b;
+}
+
+.contact-form-panel {
+    border-top: 1px solid rgba(243, 240, 232, 0.2);
+    padding-top: 24px;
+}
+
+.contact-form-panel h2 {
+    color: #f3f0e8;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    margin: 0 0 30px;
+}
+
+.contact-form-panel form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.contact-form-panel label {
+    color: #aaa99e;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.contact-form-panel input,
+.contact-form-panel textarea {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(243, 240, 232, 0.26);
+    border-radius: 0;
+    color: #f3f0e8;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    margin: 0 0 25px;
+    outline: 0;
+    padding: 10px 0 12px;
+    transition: border-color 180ms ease;
+    width: 100%;
+}
+
+.contact-form-panel textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.contact-form-panel input::placeholder,
+.contact-form-panel textarea::placeholder {
+    color: #65706a;
+}
+
+.contact-form-panel input:focus,
+.contact-form-panel textarea:focus {
+    border-color: #8fb89b;
+}
+
+.contact-form-panel button {
+    align-items: center;
+    align-self: flex-start;
+    background: #8fb89b;
+    border: 0;
+    color: #202522;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    gap: 16px;
+    padding: 15px 18px;
+    transition: background 180ms ease, transform 180ms ease;
+}
+
+.contact-form-panel button:hover {
+    background: #b4d5bd;
+    transform: translateY(-3px);
+}
+
+.contact-form-panel button:focus-visible {
+    outline: 3px solid #8fb89b;
+    outline-offset: 4px;
+}
+
+.form-status {
+    color: #8fb89b;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    line-height: 1.5;
+    margin: 20px 0 0;
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 22px 22px 44px;
+    }
+
+    .contact-page .portfolio-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .contact-page .portfolio-nav {
+        gap: 14px;
+        order: 3;
+        width: 100%;
+    }
+
+    .contact-page .portfolio-nav a {
+        font-size: 0.64rem;
+    }
+
+    .contact-page main.contact {
+        display: block;
+        margin-top: 78px;
+    }
+
+    .contact-form-panel {
+        margin-top: 76px;
+    }
+}
