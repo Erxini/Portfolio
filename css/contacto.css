@@ -2,7 +2,7 @@
     background: #202522;
     color: #f3f0e8;
     min-height: 100vh;
-    padding: 30px 5vw 60px;
+    padding: 30px 5vw 50px;
 }
 
 .contact-page .portfolio-header {
@@ -15,7 +15,7 @@
     display: grid;
     gap: clamp(55px, 9vw, 150px);
     grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.8fr);
-    margin: clamp(90px, 14vh, 160px) auto 0;
+    margin: clamp(70px, 12vh, 140px) auto 0;
     max-width: 1200px;
     padding: 0;
     width: 100%;
@@ -181,7 +181,7 @@
 
 @media (max-width: 768px) {
     .contact-page {
-        padding: 22px 22px 44px;
+        padding: 22px 22px 42px;
     }
 
     .contact-page .portfolio-header {

@@ -20,7 +20,7 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
-    margin: clamp(75px, 13vh, 145px) 0 clamp(55px, 8vw, 90px);
+    margin: clamp(70px, 12vh, 140px) 0 42px;
 }
 
 .about-kicker,
@@ -166,7 +166,7 @@
 
 @media (max-width: 768px) {
     .about-page {
-        padding: 22px 22px 44px;
+        padding: 22px 22px 42px;
     }
 
     .about-page .portfolio-header {
@@ -189,7 +189,7 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 24px;
-        margin: 78px 0 48px;
+        margin: 78px 0 42px;
     }
 
     .about-heading h1 {
